@@ -114,7 +114,7 @@ public class InGameUICtrl : MonoBehaviour
     {
         if (!ALL_LV_MAX)
         {
-            Message.Instance().SendMessage(GameState.Pause);
+            gameManager.GamePause();
             LevelUpPanel.SetActive(true);
             Sort_Btn();
             SoundManager.instance.SFXPlay("LevelUp", levelUpAudioSource);
@@ -303,7 +303,7 @@ public class InGameUICtrl : MonoBehaviour
     {
         LevelUpPanel.SetActive(false);
         ClearPanel();
-        Message.Instance().SendMessage(GameState.Playing);
+        gameManager.GameResume();
     }
 
 

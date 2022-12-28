@@ -14,7 +14,7 @@ public class u_HP : PlayerStatCtrl
     {
         H_Toggle = PlayerPrefs.GetInt("H_Toggle");
         H_Gold = 500;
-        H_GoldText.text = H_Gold.ToString() + "°ñµå";
+        H_GoldText.text = H_Gold.ToString() + "Gold";
         LoadToggle();
     }
 
@@ -68,7 +68,7 @@ public class u_HP : PlayerStatCtrl
     public void ResetToggle()
     {
         H_Gold = 500;
-        H_GoldText.text = H_Gold.ToString() + "°ñµå";
+        H_GoldText.text = H_Gold.ToString() + "Gold";
         playerGold.currPlayerGold = PlayerPrefs.GetInt("AllPlayerGold");
         playerGold.UpdateGold();
         for (int i = 0; i < Toggles.Length; i++)
@@ -86,12 +86,12 @@ public class u_HP : PlayerStatCtrl
                 upgradeHP += 10;
                 playerGold.currPlayerGold -= H_Gold;
                 H_Gold += 500;
-                H_GoldText.text = H_Gold.ToString() + "°ñµå";
+                H_GoldText.text = H_Gold.ToString() + "Gold";
                 playerGold.UpdateGold();
                 SoundManager.instance.SFXPlay("Upgrade", audioSource);
                 if (i == 2)
                 {
-                    H_GoldText.text = "ÃÖ´ë ·¹º§ÀÔ´Ï´Ù.";
+                    H_GoldText.text = "Max Level";
                 }
                 base.UpdateStat();
                 Toggles[i].isOn = true;

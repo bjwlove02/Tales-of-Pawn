@@ -5,8 +5,6 @@ using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour
 {
-    //[SerializeField] private GameObject InventoryPanel;
-
     public ItemSlot[] Slots;
 
     public void GetItem(Item item)

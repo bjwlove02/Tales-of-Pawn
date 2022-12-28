@@ -117,7 +117,7 @@ public class UIController : MonoBehaviour
     }
 
     // 일시정지 버튼
-    public void PauseGame()                     // 처음으로 pause 패널을 띄운 이후 Title로 돌아갔다 재시작하면 panel 활성화 안됨
+    public void PauseGame()  
     {
         GameManager gameManager = FindObjectOfType<GameManager>();
         gameManager.GamePause();
@@ -125,7 +125,7 @@ public class UIController : MonoBehaviour
     }
 
     // 일시정지 해제
-    public void OnClick_ResumeGame()            // 동작하지 않는다. update 펑션에서 PausePanel에 매번 새로운 오브젝트를 할당하면서 발생하는 문제로 예상됨.
+    public void OnClick_ResumeGame()  
     {
         GameManager gameManager = FindObjectOfType<GameManager>();
         gameManager.GameResume();
@@ -165,7 +165,7 @@ public class UIController : MonoBehaviour
         ResultPanel.SetActive(true);
         ResultPanel.GetComponent<GameOverPanel>().ShowResult();
         SoundManager.instance.SFXPlay("Lose", loseAudioSource);
-        string str = "<color=#ff0000>" + "훈련 실패..." + "</color>";
+        string str = "<color=#ff0000>" + "訓練失敗..." + " </color>";
         ResultText.text = str;
     }
 
@@ -175,7 +175,7 @@ public class UIController : MonoBehaviour
         ResultPanel.SetActive(true);
         ResultPanel.GetComponent<GameOverPanel>().ShowResult();
         SoundManager.instance.SFXPlay("Victory", victoryAudioSource);
-        string str = "<color=#00ff00>" + "훈련 완료!" + "</color>";
+        string str = "<color=#00ff00>" + "訓練完了！" + "</color>";
         ResultText.text = str;
     }
 

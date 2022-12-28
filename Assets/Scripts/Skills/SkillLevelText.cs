@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -27,19 +27,19 @@ public class SkillLevelText : MonoBehaviour
                 switch (skillLevel.meleeAttackLevel)
                 {
                     case 1:
-                        levelUpBtn.btn_Text.text = "±âº» ÇÇÇØ 10 Áõ°¡";
+                        levelUpBtn.btn_Text.text = "åŸºæœ¬è¢«å®³ 10å¢—åŠ ";
                         levelUpBtn.LevelText.text = "Lv " + (int)(skillLevel.meleeAttackLevel + 1);
                         break;
                     case 2:
-                        levelUpBtn.btn_Text.text = "±âº» ÇÇÇØ 5 Áõ°¡\n°ø°İ ¼Óµµ 10% Áõ°¡";
+                        levelUpBtn.btn_Text.text = "åŸºæœ¬è¢«å®³ 5å¢—åŠ \næ”»æ’ƒé€Ÿåº¦ 10%å¢—åŠ ";
                         levelUpBtn.LevelText.text = "Lv " + (int)(skillLevel.meleeAttackLevel + 1);
                         break;
                     case 3:
-                        levelUpBtn.btn_Text.text = "±âº» ÇÇÇØ 10 Áõ°¡";
+                        levelUpBtn.btn_Text.text = "åŸºæœ¬è¢«å®³ 10å¢—åŠ ";
                         levelUpBtn.LevelText.text = "Lv " + (int)(skillLevel.meleeAttackLevel + 1);
                         break;
                     case 4:
-                        levelUpBtn.btn_Text.text = "±âº» ÇÇÇØ 5 Áõ°¡\n°ø°İ ¼Óµµ 10% Áõ°¡";
+                        levelUpBtn.btn_Text.text = "åŸºæœ¬è¢«å®³ 5å¢—åŠ \næ”»æ’ƒé€Ÿåº¦ 10%å¢—åŠ ";
                         levelUpBtn.LevelText.text = "Lv Max";
                         break;
                 }
@@ -48,19 +48,19 @@ public class SkillLevelText : MonoBehaviour
                 switch (skillLevel.shotGunLevel)
                 {
                     case 1:
-                        levelUpBtn.btn_Text.text = "±âº» ÇÇÇØ 10 Áõ°¡";
+                        levelUpBtn.btn_Text.text = "åŸºæœ¬è¢«å®³ 10å¢—åŠ ";
                         levelUpBtn.LevelText.text = "Lv " + (int)(skillLevel.shotGunLevel + 1);
                         break;
                     case 2:
-                        levelUpBtn.btn_Text.text = "±âº» ÇÇÇØ 5 Áõ°¡\n°ø°İ ¼Óµµ 10% Áõ°¡";
+                        levelUpBtn.btn_Text.text = "åŸºæœ¬è¢«å®³ 5å¢—åŠ \næ”»æ’ƒé€Ÿåº¦ 10%å¢—åŠ ";
                         levelUpBtn.LevelText.text = "Lv " + (int)(skillLevel.shotGunLevel + 1);
                         break;
                     case 3:
-                        levelUpBtn.btn_Text.text = "±âº» ÇÇÇØ 5 Áõ°¡\n³Ë¹é 10% Áõ°¡";
+                        levelUpBtn.btn_Text.text = "åŸºæœ¬è¢«å®³ 5å¢—åŠ \nãƒãƒƒã‚¯ãƒãƒƒã‚¯ 10%å¢—åŠ ";
                         levelUpBtn.LevelText.text = "Lv " + (int)(skillLevel.shotGunLevel + 1);
                         break;
                     case 4:
-                        levelUpBtn.btn_Text.text = "±âº» ÇÇÇØ 10 Áõ°¡\n°ø°İ ¼Óµµ 10% Áõ°¡";
+                        levelUpBtn.btn_Text.text = "åŸºæœ¬è¢«å®³ 10å¢—åŠ \næ”»æ’ƒé€Ÿåº¦ 10%å¢—åŠ ";
                         levelUpBtn.LevelText.text = "Lv Max";
                         break;
                 }
@@ -69,19 +69,19 @@ public class SkillLevelText : MonoBehaviour
                 switch (skillLevel.circleBombLevel)
                 {
                     case 1:
-                        levelUpBtn.btn_Text.text = "±âº» ÇÇÇØ 2 Áõ°¡";
+                        levelUpBtn.btn_Text.text = "åŸºæœ¬è¢«å®³ 2å¢—åŠ ";
                         levelUpBtn.LevelText.text = "Lv " + (int)(skillLevel.circleBombLevel + 1);
                         break;
                     case 2:
-                        levelUpBtn.btn_Text.text = "±âº» ÇÇÇØ 1 Áõ°¡\n°ø°İ ¹üÀ§ 20% Áõ°¡";
+                        levelUpBtn.btn_Text.text = "åŸºæœ¬è¢«å®³ 1å¢—åŠ \næ”»æ’ƒç¯„å›² 20%å¢—åŠ ";
                         levelUpBtn.LevelText.text = "Lv " + (int)(skillLevel.circleBombLevel + 1);
                         break;
                     case 3:
-                        levelUpBtn.btn_Text.text = "°ø°İ ¼Óµµ 10% Áõ°¡";
+                        levelUpBtn.btn_Text.text = "æ”»æ’ƒé€Ÿåº¦ 10%å¢—åŠ ";
                         levelUpBtn.LevelText.text = "Lv " + (int)(skillLevel.circleBombLevel + 1);
                         break;
                     case 4:
-                        levelUpBtn.btn_Text.text = "±âº» ÇÇÇØ 2 Áõ°¡\n°ø°İ ¹üÀ§ 20% Áõ°¡\n°ø°İ ¼Óµµ 10% Áõ°¡";
+                        levelUpBtn.btn_Text.text = "åŸºæœ¬è¢«å®³ 2å¢—åŠ \næ”»æ’ƒç¯„å›² 20%å¢—åŠ \næ”»æ’ƒé€Ÿåº¦ 10%å¢—åŠ ";
                         levelUpBtn.LevelText.text = "Lv Max";
                         break;
                 }
@@ -90,19 +90,19 @@ public class SkillLevelText : MonoBehaviour
                 switch (skillLevel.fireBallLevel)
                 {
                     case 1:
-                        levelUpBtn.btn_Text.text = "Åõ»çÃ¼ 1°³ Áõ°¡";
+                        levelUpBtn.btn_Text.text = "æŠ•å°„ä½“ 1å€‹å¢—åŠ ";
                         levelUpBtn.LevelText.text = "Lv " + (int)(skillLevel.fireBallLevel + 1);
                         break;
                     case 2:
-                        levelUpBtn.btn_Text.text = "±âº» ÇÇÇØ 10 Áõ°¡\n°üÅë 1È¸ Áõ°¡";
+                        levelUpBtn.btn_Text.text = "åŸºæœ¬è¢«å®³ 10å¢—åŠ \nè²«é€š 1å›å¢—åŠ ";
                         levelUpBtn.LevelText.text = "Lv " + (int)(skillLevel.fireBallLevel + 1);
                         break;
                     case 3:
-                        levelUpBtn.btn_Text.text = "Åõ»çÃ¼ 1°³ Áõ°¡, °üÅë 1È¸ Áõ°¡";
+                        levelUpBtn.btn_Text.text = "æŠ•å°„ä½“ 1å€‹å¢—åŠ ã€è²«é€š 1å›å¢—åŠ ";
                         levelUpBtn.LevelText.text = "Lv " + (int)(skillLevel.fireBallLevel + 1);
                         break;
                     case 4:
-                        levelUpBtn.btn_Text.text = "±âº» ÇÇÇØ 10 Áõ°¡\nÅõ»çÃ¼ 1°³ Áõ°¡, °üÅë 1È¸ Áõ°¡";
+                        levelUpBtn.btn_Text.text = "åŸºæœ¬è¢«å®³ 10å¢—åŠ \næŠ•å°„ä½“ 1å€‹å¢—åŠ ã€è²«é€š1å›å¢—åŠ ";
                         levelUpBtn.LevelText.text = "Lv Max";
                         break;
                 }
@@ -111,19 +111,19 @@ public class SkillLevelText : MonoBehaviour
                 switch (skillLevel.meteorLevel)
                 {
                     case 1:
-                        levelUpBtn.btn_Text.text = "±âº» ÇÇÇØ 10 Áõ°¡";
+                        levelUpBtn.btn_Text.text = "åŸºæœ¬è¢«å®³ã€€10å¢—åŠ ";
                         levelUpBtn.LevelText.text = "Lv " + (int)(skillLevel.meteorLevel + 1);
                         break;
                     case 2:
-                        levelUpBtn.btn_Text.text = "°ø°İ ¼Óµµ 10% Áõ°¡";
+                        levelUpBtn.btn_Text.text = "æ”»æ’ƒé€Ÿåº¦ 10%å¢—åŠ ";
                         levelUpBtn.LevelText.text = "Lv " + (int)(skillLevel.meteorLevel + 1);
                         break;
                     case 3:
-                        levelUpBtn.btn_Text.text = "±âº» ÇÇÇØ 10 Áõ°¡";
+                        levelUpBtn.btn_Text.text = "åŸºæœ¬è¢«å®³ã€€10å¢—åŠ ";
                         levelUpBtn.LevelText.text = "Lv " + (int)(skillLevel.meteorLevel + 1);
                         break;
                     case 4:
-                        levelUpBtn.btn_Text.text = "±âº» ÇÇÇØ 10 Áõ°¡\n°ø°İ ¼Óµµ 20% Áõ°¡";
+                        levelUpBtn.btn_Text.text = "åŸºæœ¬è¢«å®³ã€€10å¢—åŠ \næ”»æ’ƒé€Ÿåº¦ 20%å¢—åŠ ";
                         levelUpBtn.LevelText.text = "Lv Max";
                         break;
                 }

@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: EFH
-  productName: "\uD14C\uC77C\uC988 \uC624\uBE0C \uD3F0"
+  productName: Tales of Pawn
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -153,7 +153,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Standalone: com.DefaultCompany.MainProject
+    Standalone: com.EFH.TalesofPawn
   buildNumber:
     Standalone: 0
     iPhone: 0

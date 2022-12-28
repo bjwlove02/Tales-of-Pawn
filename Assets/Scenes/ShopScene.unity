@@ -1109,7 +1109,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC5C5\uADF8\uB808\uC774\uB4DC"
+  m_Text: Shop
 --- !u!222 &774702831
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1320,7 +1320,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uB808\uBCA8 \uB2F9 \uCFE8\uD0C0\uC784 -0.1  (\uCD5C\uB300 -0.3)"
+  m_Text: CoolTime -0.1  (Max -0.3)
 --- !u!222 &907158274
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1399,7 +1399,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uB808\uBCA8 \uB2F9 \uC774\uB3D9 \uC18D\uB3C4 +1 (\uCD5C\uB300 +3)"
+  m_Text: Speed +1 (Max +3)
 --- !u!222 &912066996
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2028,8 +2028,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 380, y: 40}
-  m_SizeDelta: {x: 765, y: 80}
+  m_AnchoredPosition: {x: 375.09955, y: 40}
+  m_SizeDelta: {x: 755.1991, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1219397957
 MonoBehaviour:
@@ -2064,7 +2064,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uB808\uBCA8 \uB2F9 \uCD5C\uB300 \uCCB4\uB825 +5 (\uCD5C\uB300 +15)"
+  m_Text: "MAX HP\r +5 (Max +15)"
 --- !u!222 &1219397958
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3360,7 +3360,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uB808\uBCA8 \uB2F9 \uACF5\uACA9\uB825 +5 (\uCD5C\uB300 +15)"
+  m_Text: DMG +5 (Max +15)
 --- !u!222 &2060278283
 CanvasRenderer:
   m_ObjectHideFlags: 0

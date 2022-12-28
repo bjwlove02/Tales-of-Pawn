@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -15,12 +15,12 @@ public class GameOverPanel : MonoBehaviour
         GameManager gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         gameManager.GamePause();
 
-        survive_time.text = "»ıÁ¸ ½Ã°£ : " + gameManager.timeProcess.ToString() + " ÃÊ";
+        survive_time.text = "ç”Ÿå­˜æ™‚é–“ : " + gameManager.timeProcess.ToString() + " ç§’";
 
-        monster_killed.text = "Ã³Ä¡ÇÑ ¸ó½ºÅÍ : " + gameManager.monster_killCount.ToString() + " ¸¶¸®";
+        monster_killed.text = "å‡¦ç½®ã—ãŸãƒ¢ãƒ³ã‚¹ã‚¿ãƒ¼ : " + gameManager.monster_killCount.ToString() + " åŒ¹";
 
-        bossMonster_killed.text = "Ã³Ä¡ÇÑ º¸½º ¸ó½ºÅÍ : " + gameManager.bossmonster_killCount.ToString() + " ¸¶¸®";
+        bossMonster_killed.text = "å‡¦ç½®ã—ãŸãƒœã‚¹ãƒ¢ãƒ³ã‚¹ã‚¿ãƒ¼ : " + gameManager.bossmonster_killCount.ToString() + " åŒ¹";
 
-        gold_Achieve.text = "È¹µæ °ñµå : " + (gameManager.getGold + gameManager.monster_killCount).ToString() + " °ñµå";
+        gold_Achieve.text = "ç²å¾—ã‚´ãƒ¼ãƒ«ãƒ‰ : " + (gameManager.getGold + gameManager.monster_killCount).ToString() + " ã‚´ãƒ¼ãƒ«ãƒ‰";
     }
 }

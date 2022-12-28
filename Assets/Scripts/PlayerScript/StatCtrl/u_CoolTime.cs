@@ -14,7 +14,7 @@ public class u_CoolTime : PlayerStatCtrl
     {
         C_Toggle = PlayerPrefs.GetFloat("C_Toggle");
         C_Gold = 1000;
-        C_GoldText.text = C_Gold.ToString() + "°ñµå";
+        C_GoldText.text = C_Gold.ToString() + "Gold";
         LoadToggle();
     }
 
@@ -68,7 +68,7 @@ public class u_CoolTime : PlayerStatCtrl
     public void ResetToggle()
     {
         C_Gold = 1000;
-        C_GoldText.text = C_Gold.ToString() + "°ñµå";
+        C_GoldText.text = C_Gold.ToString() + "Gold";
         playerGold.currPlayerGold = PlayerPrefs.GetInt("AllPlayerGold");
         playerGold.UpdateGold();
         for (int i = 0; i < Toggles.Length; i++)
@@ -86,12 +86,12 @@ public class u_CoolTime : PlayerStatCtrl
                 upgradeCoolTime -= 0.1f;
                 playerGold.currPlayerGold -= C_Gold;
                 C_Gold += 1000;
-                C_GoldText.text = C_Gold.ToString() + "°ñµå";
+                C_GoldText.text = C_Gold.ToString() + "Gold";
                 playerGold.UpdateGold();
                 SoundManager.instance.SFXPlay("Upgrade", audioSource);
                 if (i == 2)
                 {
-                    C_GoldText.text = "ÃÖ´ë ·¹º§ÀÔ´Ï´Ù.";
+                    C_GoldText.text = "Max Level";
                 }
                 base.UpdateStat();
                 Toggles[i].isOn = true;

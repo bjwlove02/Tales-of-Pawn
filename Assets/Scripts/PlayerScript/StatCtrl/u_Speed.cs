@@ -14,7 +14,7 @@ public class u_Speed : PlayerStatCtrl
     {
         S_Toggle = PlayerPrefs.GetFloat("S_Toggle");
         S_Gold = 500;
-        S_GoldText.text = S_Gold.ToString() + "°ñµå";
+        S_GoldText.text = S_Gold.ToString() + "Gold";
         LoadToggle();
     }
 
@@ -68,7 +68,7 @@ public class u_Speed : PlayerStatCtrl
     public void ResetToggle()
     {
         S_Gold = 500;
-        S_GoldText.text = S_Gold.ToString() + "°ñµå";
+        S_GoldText.text = S_Gold.ToString() + "Gold";
         playerGold.currPlayerGold = PlayerPrefs.GetInt("AllPlayerGold");
         playerGold.UpdateGold();
         for (int i = 0; i < Toggles.Length; i++)
@@ -86,12 +86,12 @@ public class u_Speed : PlayerStatCtrl
                 upgradeSpeed += 1.0f;
                 playerGold.currPlayerGold -= S_Gold;
                 S_Gold += 500;
-                S_GoldText.text = S_Gold.ToString() + "°ñµå";
+                S_GoldText.text = S_Gold.ToString() + "Gold";
                 playerGold.UpdateGold();
                 SoundManager.instance.SFXPlay("Upgrade", audioSource);
                 if (i == 2)
                 {
-                    S_GoldText.text = "ÃÖ´ë ·¹º§ÀÔ´Ï´Ù.";
+                    S_GoldText.text = "Max Level";
                 }
                 base.UpdateStat();
                 Toggles[i].isOn = true;

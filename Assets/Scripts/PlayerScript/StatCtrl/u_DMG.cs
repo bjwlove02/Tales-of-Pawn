@@ -14,7 +14,7 @@ public class u_DMG : PlayerStatCtrl
     {
         D_Toggle = PlayerPrefs.GetInt("D_Toggle");
         D_Gold = 500;
-        D_GoldText.text = D_Gold.ToString() + "°ñµå";
+        D_GoldText.text = D_Gold.ToString() + "Gold";
         LoadToggle();
     }
 
@@ -68,7 +68,7 @@ public class u_DMG : PlayerStatCtrl
     public void ResetToggle()
     {
         D_Gold = 500;
-        D_GoldText.text = D_Gold.ToString() + "°ñµå";
+        D_GoldText.text = D_Gold.ToString() + "Gold";
         playerGold.currPlayerGold = PlayerPrefs.GetInt("AllPlayerGold");
         playerGold.UpdateGold();
         for (int i = 0; i < Toggles.Length; i++)
@@ -86,12 +86,12 @@ public class u_DMG : PlayerStatCtrl
                 upgradeDMG += 5;
                 playerGold.currPlayerGold -= D_Gold;
                 D_Gold += 500;
-                D_GoldText.text = D_Gold.ToString() + "°ñµå";
+                D_GoldText.text = D_Gold.ToString() + "Gold";
                 playerGold.UpdateGold();
                 SoundManager.instance.SFXPlay("Upgrade", audioSource);
                 if (i == 2)
                 {
-                    D_GoldText.text = "ÃÖ´ë ·¹º§ÀÔ´Ï´Ù.";
+                    D_GoldText.text = "Max Level";
                 }
                 base.UpdateStat();
                 Toggles[i].isOn = true;
